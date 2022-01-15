@@ -114,6 +114,7 @@ p .dollar {
     height: 300px;
     border: 1px solid gray;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
     padding: 10px;
     position: relative;
 }
@@ -126,9 +127,11 @@ p .dollar {
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
     background-color: #142f438c;
     color: white;
     padding: 15px;
+    padding-top: 85px;
 }
 .headphone-collection:hover .photo-detail{
     display: block;
