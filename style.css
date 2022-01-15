@@ -45,10 +45,10 @@ body{
 }
 .header-banner{
     position: relative;
-    transition: transform 2s ;
+    transition: transform 2s ease-in-out ;
 }
 .header-banner:hover{
-    transform: translate(50px, 0);
+    transform: scale(.9);
 }
 
 
