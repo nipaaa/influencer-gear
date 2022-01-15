@@ -1,0 +1,187 @@
+/* ------ font link ----- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* ----- common styles ------ */
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ----------- header part style---------- */
+.header{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.header-content{
+    padding: 70px 0;
+    width: 580px;
+    position: relative;
+    transition: transform 3s ;
+}
+.header-content h1{
+    font-size: 52px;
+    margin-bottom: -10px;
+}
+.header-content a{
+    text-decoration: none;
+    background-color: #142F43;
+    color: white;
+    border: 1px solid #142F43;
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+.header-content a .fas{
+    padding-left: 10px;
+}
+.header-content:hover{
+    transform: translate(50px, 0);
+}
+.header-banner{
+    position: relative;
+    transition: transform 2s ;
+}
+.header-banner:hover{
+    transform: translate(50px, 0);
+}
+
+/* ---------header animation------- */
+
+
+/* --------popular collection part style------- */
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.popular-collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.popular-collection{
+    box-shadow: 5px 5px 20px #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+.popular-collection h2 {
+    font-size: 28px;
+}
+p .dollar {
+    font-size: 24px;
+}
+.popular-collection p {
+    font-size: 14px;
+    line-height: 0.7;
+}
+.rating{
+    display: flex;
+}
+.star-icon{
+    color: #FFC900;
+    margin-top: 8px;
+    padding-right: 25px;   
+}
+#see-more-btn{
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 150px;
+    margin-bottom: 100px;  
+}
+#see-more-btn a{
+    text-decoration: none;
+    color: #142F43;
+    text-align: right;
+    
+}
+#see-more-btn .fas{
+    padding-left: 10px;
+}
+
+/* -----premium collection part style------ */
+.premium-collections{
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+/* --------footer part style-------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #142F43 ;
+    padding: 20px 0;
+}
+footer .fab{
+    padding: 0 8px;
+}
+
+/* ----------media quaries--------- */
+/* --------for mobile device--------- */
+@media only screen and (max-width:688px) {
+    /* header part media query style */
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-content{
+        width: 300px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    } 
+    .header-banner img {
+        width: 100%;
+    }
+    
+    /* popular collection part media query style  */
+    .popular-collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ------premier collection part style---- */
+    .premium-collections{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+/* --------for tablet device--------- */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    /* header part media query style */
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-content{
+        width: 600px;
+    }
+    .header-content h1{
+        font-size: 35px;
+    } 
+
+    /* popular collection part media query style  */
+    .popular-collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
+      /* ------premier collection part style---- */
+      .premium-collections{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
